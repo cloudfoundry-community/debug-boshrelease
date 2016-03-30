@@ -11,4 +11,4 @@ def hashify(x)
   end
   return h
 end
-%><%= hashify(spec).to_yaml %>
+%><%= h = hashify(spec); h.delete('properties'); h.to_yaml %>
