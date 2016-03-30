@@ -2,4 +2,6 @@
 builds:
   ed64dfd0-5162-4c48-a8a5-da6ee20d3420:
     version: '1'
+  830712a8-fd90-48d8-a1ba-b9111af139b6:
+    version: 2.1.0
 format-version: '2'

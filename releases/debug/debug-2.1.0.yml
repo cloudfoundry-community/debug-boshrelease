@@ -1,0 +1,15 @@
+---
+packages: []
+jobs:
+- name: debug
+  version: 40375f8182739f2fd23d71ef81a627ba11f78477
+  fingerprint: 40375f8182739f2fd23d71ef81a627ba11f78477
+  sha1: 679c1d72c851aed11176b0dce51cd13d77624820
+license:
+  version: ec16b6c95de5c9122dcf472815239a76d1b6c9ea
+  fingerprint: ec16b6c95de5c9122dcf472815239a76d1b6c9ea
+  sha1: 0baae99731e03c3675d1d57c6fe4b09469d384b4
+commit_hash: 5e887503
+uncommitted_changes: true
+name: debug
+version: 2.1.0
