@@ -1,8 +1,9 @@
 ---
 meta:
-  name:   debug-boshrelease
-  target: sw
-  url:    https://ci.vsphere.starkandwayne.com
+  name:    debug-boshrelease
+  release: Debug
+  target:  sw
+  url:     https://ci.vsphere.starkandwayne.com
 
   initial_version: 1.0.0
 
