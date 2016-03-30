@@ -18,6 +18,7 @@ auth:
     username: ${BOSH_LITE_USERNAME}
     password: ${BOSH_LITE_PASSWORD}
 EOF
+rm -rf ~/.bosh/cache
 
 set -e
 cd ${REPO_ROOT}
