@@ -1,0 +1,14 @@
+<% # vim:ft=eruby
+def hashify(x)
+  return x unless x.is_a? OpenStruct
+  h = {}
+  x.to_h.each do |k,v|
+    if v.is_a? Array
+      h[k.to_s] = v.map { |a| hashify(a) }
+    else
+      h[k.to_s] = hashify(v)
+    end
+  end
+  return h
+end
+%><%= hashify(properties).to_yaml %>

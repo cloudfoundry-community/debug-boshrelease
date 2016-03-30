@@ -1,0 +1,8 @@
+---
+name: debug
+packages: []
+templates:
+  spec.yml:       spec.yml
+  properties.yml: properties.yml
+
+properties: {}
