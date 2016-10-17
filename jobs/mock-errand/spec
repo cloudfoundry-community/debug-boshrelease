@@ -1,0 +1,12 @@
+---
+name: mock-errand
+packages: []
+templates:
+  bin/run: bin/run
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+
+properties:
+  mock.exit:
+    description: "Exit code for the mock errand's bin/run script to terminate with"
+    default: 0

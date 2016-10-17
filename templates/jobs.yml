@@ -11,12 +11,19 @@ update:
 jobs:
   - name: debug
     templates:
-    - name: debug
-      release: debug
+      - { release: debug, name: debug }
     instances: 1
     persistent_disk: 0
     resource_pool: small_z1
-    networks: (( param "please set just_install_package networks" ))
+    networks: (( param "please set debug networks" ))
+
+  - name: mock
+    templates:
+      - { release: debug, name: mock-errand }
+    lifecycle: errand
+    instances: 1
+    resource_pool: small_z1
+    networks: (( grab jobs.debug.networks ))
 
 networks: (( param "please set networks" ))
 
