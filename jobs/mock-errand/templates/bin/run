@@ -8,5 +8,17 @@ source /var/vcap/jobs/mock-errand/helpers/ctl_setup.sh 'mock-errand'
 
 EXITSTATUS=<%= p('mock.exit') %>
 
+<% if_p('mock.stdout') do |x| %>
+cat <<EOF
+<%= x %>
+EOF
+<% end %>
+
+<% if_p('mock.stderr') do |x| %>
+cat >&2 <<EOF
+<%= x %>
+EOF
+<% end %>
+
 echo "Errand mock-errand is complete; exit status $EXITSTATUS"
 exit $EXITSTATUS

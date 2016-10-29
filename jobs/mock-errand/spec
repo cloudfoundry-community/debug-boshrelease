@@ -7,6 +7,10 @@ templates:
   helpers/ctl_utils.sh: helpers/ctl_utils.sh
 
 properties:
+  mock.stdout:
+    description: "Fake output that the mock errand should print to standard out"
+  mock.stderr:
+    description: "Fake output that the mock errand should print to standard error"
   mock.exit:
     description: "Exit code for the mock errand's bin/run script to terminate with"
     default: 0
