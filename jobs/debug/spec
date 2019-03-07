@@ -5,4 +5,6 @@ templates:
   spec.yml:       spec.yml
   properties.yml: properties.yml
 
-properties: {}
+properties:
+  properties:
+    description: A wrapper around the real properties, so that they get dumped.
